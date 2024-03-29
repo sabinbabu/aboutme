@@ -1,35 +1,87 @@
-body{
+body {
     background-color: rgb(244, 235, 225);
     font-family: "Indie Flower", cursive;
 }
 
-h1{
+h1 {
     font-family: "Indie Flower", cursive;
 }
 
-#header{
+#header {
     display: flex;
     justify-content: space-between;
 }
 
-#header a{
+#header a {
     text-decoration: none;
 }
 
-.navigation ul{
-    padding: 0.5rem ;
+.navigation ul {
+    padding: 0.5rem;
 }
 
-.navigation ul li{
+.navigation ul li {
     display: inline;
     padding: 0.5rem;
-} 
+}
 
-.navigation ul li a{
+.navigation ul li a {
     font-size: 1.2rem;
 }
 
-#footer{
-    text-align: center;
+
+@media screen and (max-width:500px) {
+
+    #header,
+    .navigation ul li {
+        display: block;
+    }
+
 }
 
+.projects {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.img-container {
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+
+.icons .fa-brands {
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.icons i:hover {
+    transition: all .2s ease-in;
+    transform: scale(2);
+
+}
+
+.icons .fa-html5:hover {
+    color: red;
+}
+
+.icons .fa-css3-alt:hover {
+    color: blue;
+}
+
+.icons .fa-square-js:hover {
+    color: yellow;
+}
+
+.icons .fa-bootstrap:hover {
+    color: purple;
+}
+
+#footer {
+    text-align: center;
+}
