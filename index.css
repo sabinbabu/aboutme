@@ -3,13 +3,16 @@
 
 :root {
   --background-color: #f7e7d9af;
+  --color-dark: #2a2a2a;
   --primary-color: #ae6902;
+
+  --dark-bg: var(--color-dark);
+  --dark-text-color: white;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
-  background-color: var(--background-color);
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -25,6 +28,10 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.wrapper {
+  background-color: var(--background-color);
 }
 
 /* header */
@@ -44,4 +51,30 @@ a {
 .header_menu ul li:hover {
   color: var(--primary-color);
   transition: all 0.1s ease-in;
+  font-weight: bold;
+}
+
+/* dark_mode */
+#dark_mode_box {
+  display: none;
+}
+
+#dark_mode_box:checked + .wrapper {
+  background-color: var(--color-dark);
+  color: var(--dark-text-color);
+}
+
+#dark_mode_box:checked + .wrapper:first-child {
+  font-size: xx-large;
+}
+
+[for="dark_mode_box"] {
+  position: fixed;
+  top: 5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+[for="dark_mode_box"]:hover {
+  font-size: large;
 }
