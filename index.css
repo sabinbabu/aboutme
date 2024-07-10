@@ -160,3 +160,48 @@ a {
   font-size: large;
   letter-spacing: 0.3rem;
 }
+
+/* skills_section */
+#skills {
+  margin-top: 1rem;
+  height: 20vh;
+  background-color: var(--secondary-color);
+}
+
+h3 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.skills_container {
+  justify-content: space-around;
+}
+
+.skills_container div i {
+  font-size: xx-large;
+  color: white;
+}
+
+.skills_container div:hover {
+  cursor: pointer;
+}
+
+.skills_container .html i:hover {
+  color: orange;
+}
+
+.skills_container .css i:hover {
+  color: blue;
+}
+
+.skills_container .js i:hover {
+  color: yellow;
+}
+
+.skills_container .react i:hover {
+  color: blue;
+}
+
+.skills_container .photoshop i:hover {
+  color: rgb(2, 2, 60);
+}
