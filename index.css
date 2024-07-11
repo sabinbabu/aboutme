@@ -140,6 +140,7 @@ img {
   cursor: pointer;
   border: none;
   margin-top: 1rem;
+  color: var(--color-dark);
 }
 
 .hero_description button i {
@@ -243,6 +244,12 @@ h3 {
   border-radius: 2rem 7rem 3rem 7rem;
 }
 
+@media screen and (min-width: 300px) {
+  .individual_project {
+    width: 22rem;
+  }
+}
+
 .img_wrapper {
   height: 20rem;
   max-width: 25rem;
@@ -272,6 +279,12 @@ h3 {
 
 .about_image_wrapper img {
   opacity: 0.2;
+}
+
+@media screen and (max-width: 760px) {
+  .about_image_wrapper img {
+    display: none;
+  }
 }
 
 .aboutme_description p {
