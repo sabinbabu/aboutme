@@ -266,3 +266,49 @@ h3 {
   padding: 3rem;
   line-height: 2rem;
 }
+
+/* footer */
+
+.footer_section {
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.contact_section {
+  text-align: center;
+}
+
+.social_media > * {
+  padding: 0.5rem;
+  font-size: xx-large;
+}
+
+.contact_email {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 2rem 2rem;
+}
+
+.contact_email i {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.links_section ul {
+  list-style: none;
+  margin-left: -2.5rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.links_section ul li:hover {
+  color: var(--primary-color);
+}
+
+.footer_text {
+  background-color: var(--color-dark);
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
