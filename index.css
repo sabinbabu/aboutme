@@ -105,7 +105,7 @@ img {
   border-radius: 2rem 5rem 20rem 10rem;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 450px) {
   .hero_section {
     width: 80%;
   }
@@ -162,7 +162,7 @@ img {
   gap: 0.5rem;
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 450px) {
   .banner_container {
     width: 80%;
   }
