@@ -275,6 +275,10 @@ h3 {
   padding: 1rem;
 }
 
+.project_name + p {
+  padding-bottom: 1rem;
+}
+
 /* aboutme_section */
 
 #about {
