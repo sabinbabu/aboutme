@@ -94,8 +94,15 @@ img {
 
 /* hero_section */
 .hero_container {
-  max-height: 70dvh;
+  max-height: 70vh;
   margin-top: 5rem;
+}
+
+@media screen and (max-width: 300px) {
+  .hero_container {
+    max-height: 70dvh;
+    margin-top: 5rem;
+  }
 }
 
 .hero_section {
@@ -142,8 +149,15 @@ img {
 
 /* banner_section */
 .banner_section {
-  max-height: 30dvh;
+  max-height: 30vh;
   margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 300px) {
+  .banner_section {
+    max-height: 30dvh;
+    margin-top: 2.5rem;
+  }
 }
 
 .banner_container {
@@ -173,8 +187,16 @@ img {
 /* skills_section */
 #skills {
   margin-top: 3rem;
-  height: 20dvh;
+  height: 20vh;
   background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 300px) {
+  #skills {
+    margin-top: 3rem;
+    height: 20dvh;
+    background-color: var(--secondary-color);
+  }
 }
 
 h3 {
