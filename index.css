@@ -44,6 +44,8 @@ img {
 
 .wrapper {
   background-color: var(--background-color);
+  overflow-x: hidden;
+  margin-top: 4.1rem;
 }
 
 /* header */
@@ -51,9 +53,11 @@ img {
   justify-content: space-between;
   padding: 1rem;
   box-shadow: 1px 0px 10px rgb(134, 133, 133);
-  position: sticky;
+  position: fixed;
   top: 0px;
   background-color: var(--secondary-color);
+  z-index: 1000;
+  width: 100%;
 }
 
 .header_menu ul li {
@@ -65,6 +69,39 @@ img {
   color: var(--primary-color);
   transition: all 0.1s ease-in;
   font-weight: bold;
+}
+
+#hamburger_checkbox,
+[for="hamburger_checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  [for="hamburger_checkbox"] {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .header_menu {
+    position: absolute;
+    display: block;
+    background-color: var(--secondary-color);
+    top: 3.9rem;
+    text-align: start;
+    right: -10rem;
+    height: 100dvh;
+    width: 10rem;
+  }
+
+  .header_menu ul {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #hamburger_checkbox:checked + .header_menu {
+    right: 0;
+    transition: all 0.2s;
+  }
 }
 
 /* dark_mode */
@@ -105,7 +142,7 @@ img {
   border-radius: 2rem 5rem 20rem 10rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .hero_section {
     width: 80%;
   }
