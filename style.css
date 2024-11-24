@@ -1,0 +1,58 @@
+:root{
+    /* light mode color */
+    --bg-color : #BDE7FD;
+    --text-color : black;
+    --border-color : black;
+    --box-shadow : 4px -2px 40px 9px rgba(128,128,128,0.625);
+    --primary-color : orange;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* navbar */
+.navbar-container{
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    }
+
+    .logo-name{
+        font-weight: bolder;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .line{
+        color: var(--primary-color);
+        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    .nav-menu{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .nav-menu a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+    .nav-menu a:hover{
+        color: var(--primary-color);
+    }
+
+
