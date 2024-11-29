@@ -239,3 +239,28 @@ a {
 .card-text {
   padding: 12px;
 }
+
+/* about section */
+#about {
+  background-color: coral;
+  padding: 2rem;
+}
+.about-container {
+  flex: 1;
+}
+.about-image {
+  width: 15rem;
+  height: 20rem;
+}
+
+.about-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px 12px;
+}
+
+.about-text {
+  flex: 2;
+  line-height: 2rem;
+}
