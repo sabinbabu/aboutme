@@ -181,7 +181,30 @@ a {
   font-weight: bold;
 }
 
-.verticle-line {
+.vertical-line {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+/* skills-section */
+.skills-container {
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.skills-container :nth-child(1) i {
+  color: blue;
+}
+
+.skills-container :nth-child(2) i {
+  color: red;
+}
+
+.skills-container :nth-child(3) i {
+  color: green;
+}
+
+.skills-container :nth-child(5) i {
+  color: violet;
 }
