@@ -239,3 +239,16 @@ a {
 .card-text {
   padding: 12px;
 }
+
+/* Get in touch container */
+
+#contact {
+  padding: 12px;
+}
+.get-in-touch-container {
+  justify-content: space-evenly;
+}
+
+.mail-container i {
+  color: var(--primary-color);
+}
