@@ -240,6 +240,7 @@ a {
   padding: 12px;
 }
 
+
 /* about section */
 #about {
   background-color: coral;
@@ -263,4 +264,17 @@ a {
 .about-text {
   flex: 2;
   line-height: 2rem;
+
+/* Get in touch container */
+
+#contact {
+  padding: 12px;
+}
+.get-in-touch-container {
+  justify-content: space-evenly;
+}
+
+.mail-container i {
+  color: var(--primary-color);
+
 }
