@@ -277,3 +277,24 @@ a {
 .mail-container i {
   color: var(--primary-color);
 }
+
+/* footer section */
+footer {
+  background-color: var(--text-color);
+  color: white;
+}
+.footer-container {
+  align-items: start;
+  line-height: 2rem;
+
+  font-size: x-large;
+}
+
+.footer-container ul {
+  list-style: none;
+}
+
+.footer-container li a {
+  color: white;
+  font-size: large;
+}
